@@ -24,12 +24,18 @@
     <ClCompile Include="board.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="hexboard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cell.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="board.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hexboard.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

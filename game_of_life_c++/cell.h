@@ -14,21 +14,21 @@ class Cell {
 public:
     Cell() = default;
     Cell(Position& position);
-    Cell(Position& position, std::vector<Cell*>& neighbors);
 
     // geter
     bool GetState() const;
+    double GetX() const;
+    double GetY() const;
 
     // seter
+    void SetPosition(double x, double y);
+    void ChangeState(bool next);
     void ReverseState();
-    void NextState(std::function<bool(int neighbor_num)> rule);
-    void AddNeighbor(Cell* neighbor);
+
 
 private:
     bool state_ = false;
     Position position_ = { 0.0, 0.0 };
-
-    std::vector<Cell*> neighbors_;
 };
 
 #endif
